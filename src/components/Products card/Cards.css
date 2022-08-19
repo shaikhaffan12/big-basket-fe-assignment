@@ -1,0 +1,91 @@
+.Cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 25px;
+    margin-top: 10px;
+    
+}
+
+.Card{
+    margin-top: 10px;
+    width: 100%;
+
+}
+
+.Card:hover{
+    cursor: pointer;
+    box-shadow: 0 0 4px #000;
+
+}
+.parent-qty-div{
+    display: flex;
+}
+
+.qty-div{
+    background-color: #eee;
+    color: gray;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#qty-input{
+    width: 70px;
+    border: none;
+    outline:0;
+    text-align: center;
+    height: 22px;
+    
+}
+#qty-input:focus{
+    outline:none!important;
+}
+
+.card-button{
+    margin-left: 1rem;
+}
+
+
+/* media query for screen size 1024px */
+@media screen and (max-width:1024px){
+    .qty-div{
+        display: flex;
+    }
+}
+
+/* media query for screen size 768px (tablets)*/
+@media screen and (max-width:768px){
+    .Cards{
+        
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #qty-input{
+        width: 40px;
+    }
+}
+
+/* media query for screen size 425px mobiles  */
+@media screen and (max-width:425px){
+    .Cards{     
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #qty-input{
+        width: 25px;
+    }
+    
+}
+
+/* media query for screen size 320px mobiles */
+@media screen and (max-width:320px){
+    .parent-qty-div{
+        flex-direction: column;
+    }
+    .qty-div{
+        width: 6rem;
+    }
+    #qty-input{
+        width: 4.2rem;
+    }
+    .card-button{
+        margin-top: 0.5rem;
+    }
+}

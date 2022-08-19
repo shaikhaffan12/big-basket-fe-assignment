@@ -1,0 +1,75 @@
+#bank-title{
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: 400;
+    margin-bottom: 0%;
+}
+
+hr{
+    margin: 0%;
+}
+
+.bank-image-div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bank-image{
+    width: 23%;
+    height: 200px;
+}
+
+.bank-image:hover{
+    cursor: pointer;
+    box-shadow: 0 0 4px #000;
+}
+
+/* media query for laptop size 1024px */
+@media screen and (max-width:1024px){
+    .bank-image{
+        width: 23%;
+        height: 200px;
+    }
+}
+
+/* media query for tablets */
+@media screen and (max-width:768px ){
+    
+    .bank-image-div{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 15px;
+    }
+    
+    .bank-image-div img{
+        width: 12rem;
+    }
+    .bank-image{
+        height: 180px;
+    }
+  
+}
+
+/* media query for size between tablets and mobile */
+@media screen and (min-width: 426px) and (max-width: 619px) {
+    .bank-image-div{
+        grid-template-columns: auto auto;
+    }
+}
+
+/* media query for mobile size 425px */
+@media screen and (max-width:425px){
+    .bank-image-div{
+        grid-template-columns: auto auto ;
+    }
+    .bank-image-div img{
+        width: 10rem;
+    }
+}
+
+/* media query for mobile size 320px */
+@media screen and (max-width:320px){
+    .bank-image-div img{
+        width: 9rem;
+    }
+}

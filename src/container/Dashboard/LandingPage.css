@@ -1,0 +1,23 @@
+.filter-div{
+    border: 1px solid #f2f2f2;
+    margin-left: 7rem;
+    margin-right: 7rem;
+}
+
+@media screen and (max-width:768px){
+    .filter-div {
+        display: none;
+    }
+
+    .container{
+        max-width: 658px;
+    }
+      
+}
+
+
+@media screen and (max-width:425px){
+    .container{
+        max-width: 375px;
+    }
+}

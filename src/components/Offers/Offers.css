@@ -1,0 +1,127 @@
+.offers-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 5rem;
+    margin-left: 5rem;
+
+}
+.offers-div img:hover{
+    cursor: pointer;
+}
+
+
+#app { height: 100% }
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.offers-img{
+    width: 16%;
+}
+
+.tab-offers{
+    display: none;
+}
+
+
+/* media query for screen size 1024px */
+@media screen and (max-width:1024px){
+    .offers-img{
+      width: 16%;
+    }
+}
+
+/* media query for screen size 768px ( tablets) */
+@media screen and (max-width:768px){
+    .offers-div{
+        display: none;
+    }
+    .tab-offers{
+      display: block;
+      margin-top: 1rem;
+    }
+    .sliders-img{
+      width: 150px !important; 
+    }
+
+    .swiper-slide{
+      justify-content: space-around;
+     
+    }
+    .swiper-pagination{
+      position: relative;
+      bottom: 0px;
+    }
+    .swiper-pagination-bullets.swiper-pagination-horizontal {
+      bottom: 0px;
+    }
+
+    .swiper-pagination-bullet {
+      background-color: gainsboro;
+      opacity: 1;
+    }
+
+    span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+      background-color: gray;
+      opacity: 1;
+    }
+}
+
+/* media query for screen size 425px */
+@media screen and (max-width:425px){
+
+  .sliders-img{
+    width: 120px !important;
+  }
+}
+
+/* media query for screen size 320px*/
+@media screen and (max-width:320px){
+  .sliders-img{
+    width: 100px !important;
+  }
+}

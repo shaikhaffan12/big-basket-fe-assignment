@@ -1,0 +1,67 @@
+.download-logo-section{
+    display: flex;
+    flex-direction: column;
+}
+.download-logo{
+    width: 8rem;
+}
+
+.footer{
+    justify-content: space-around;
+    height: 8rem;
+}
+
+h6{
+    color: #75d244;
+}
+
+.social-icon-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* media query for tablets */
+@media screen and (max-width:768px){
+    .footer{
+        flex-direction: column;
+        height: auto;
+    }
+    .download-logo-section{
+        margin-left: 2rem;
+    }
+    h6{
+        margin-top: 0.5rem;
+    }
+    p{
+        margin-bottom: 0;
+    }
+    .social-icon-section{
+        
+        padding-right: 28rem;
+        padding-left: 2rem;
+    }
+}
+
+/* media query for pixel between mobile and tablet */
+@media screen and (min-width: 426px) and (max-width: 491px) {
+    .social-icon-section{
+        
+        padding-right: 17rem;
+    }
+}
+
+
+/* media query for mobile devices */
+@media screen and (max-width:425px){
+    .social-icon-section{
+        /* justify-content: space-between; */
+        padding-right: 10rem;
+    }
+}
+
+/* media query for small mobile devices */
+@media screen and (max-width:320px){
+    .social-icon-section{
+        padding-right: 7rem;
+    }
+}
