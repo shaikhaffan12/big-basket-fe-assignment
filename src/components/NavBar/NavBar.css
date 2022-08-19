@@ -1,0 +1,77 @@
+.form-div{
+    margin-right: 20rem;
+}
+
+.tab-nav{
+    display: none;
+}
+
+.basket-div{
+    background-color: #f2f2f2;
+    padding: 5px;
+}
+
+/* media query for tablets navbar */
+@media screen and (max-width:768px){
+    
+    .laptop-nav{
+        /* here we set desktop navbar to none in tablets  */
+        display: none; 
+    }
+
+    .tab-nav{
+        /* here we set tab navbar to block in tablets */
+        display: block; 
+        position: sticky;
+        top: 0;
+        z-index: 1020;
+    }
+    
+    .tab-logo{
+        color: #fff;
+        font-size: 1.4rem;
+    }
+    .form-input{
+        
+        border-radius: 0%;
+        border-right: none;
+        margin-right: 0;
+
+    }
+
+    .offcanvas{
+        max-width: 50%;
+    }
+
+    .offcanvas-body{
+        flex-grow: 0;
+    }
+
+
+    .form-btn{
+        
+        border-radius: 0%;
+       background-color: #fff;
+       border: 1px solid #ced4da;
+       border-left: none;
+       margin-left: 0;
+    }
+    
+}
+
+/* media query for pixel between 767 and 989  */
+@media screen and (min-width: 767px) and (max-width: 989px) {
+    .tab-nav{
+        display: block;
+        position: sticky;
+        top: 0;
+        z-index: 1020;
+    }
+    .laptop-nav{
+        display: none;
+    }
+    .tab-logo{
+        color: #fff;
+        font-size: 1.4rem;
+    }
+}
