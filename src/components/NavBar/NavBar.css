@@ -60,7 +60,7 @@
 }
 
 /* media query for pixel between 767 and 989  */
-@media screen and (min-width: 767px) and (max-width: 989px) {
+@media screen and (min-width: 767px) and (max-width: 991px) {
     .tab-nav{
         display: block;
         position: sticky;
@@ -73,5 +73,8 @@
     .tab-logo{
         color: #fff;
         font-size: 1.4rem;
+    }
+    .offcanvas-body{
+        flex-grow: 0;
     }
 }
