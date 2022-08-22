@@ -26,6 +26,7 @@
     color: gray;
     border: 1px solid #ccc;
     border-radius: 4px;
+    display: flex;
 }
 
 #qty-input{
@@ -52,6 +53,14 @@
     }
 }
 
+
+@media screen and (min-width: 767px) and (max-width: 991px) {
+    .Cards{
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+
+
 /* media query for screen size 768px (tablets)*/
 @media screen and (max-width:768px){
     .Cards{
@@ -63,6 +72,14 @@
     }
 }
 
+
+@media screen and (min-width: 424px) and (max-width: 615px) {
+    .Cards{
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+
 /* media query for screen size 425px mobiles  */
 @media screen and (max-width:425px){
     .Cards{     
@@ -71,7 +88,27 @@
     #qty-input{
         width: 25px;
     }
+    .card-button{
+        margin-left: 0.5rem;
+    }
     
+}
+
+@media screen and (min-width: 319px) and (max-width: 371px) {
+    .parent-qty-div{
+        flex-direction: column;
+    }
+    .qty-div{
+        width: 7rem;
+    }
+    #qty-input{
+        width: 5.2rem;
+    }
+    .card-button{
+        margin-top: 0.5rem;
+        margin-left: 1.5rem;
+    }
+
 }
 
 /* media query for screen size 320px mobiles */
@@ -87,5 +124,6 @@
     }
     .card-button{
         margin-top: 0.5rem;
+        margin-left: 1rem;
     }
 }
