@@ -21,6 +21,10 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import { useNavigate } from 'react-router-dom';
 import React, { useState } from 'react';
 
+import Paper from '@mui/material/Paper';
+import InputBase from '@mui/material/InputBase';
+import IconButton from '@mui/material/IconButton';
+import SearchIcon from '@mui/icons-material/Search';
 
 function BasicExample() {
 
@@ -73,7 +77,7 @@ function BasicExample() {
 
           <Navbar.Collapse id="basic-navbar-nav" className='justify-content-end'>
             <div className="form-div">
-              <Form className="d-flex ">
+              {/* <Form className="d-flex ">
                 <Form.Control
                   type="search"
                   placeholder="Search"
@@ -84,7 +88,24 @@ function BasicExample() {
 
                 />
                 <Button style={{ backgroundColor: "#84c225", borderColor: "#84c225" }} onClick={search}><Search /></Button>
-              </Form>
+              </Form> */}
+              <Paper
+                component="form"
+                sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', width: 400 }}
+              >
+      
+              <InputBase
+                sx={{ ml: 1, flex: 1 }}
+                placeholder="Search For Products..."
+                inputProps={{ 'aria-label': 'search for products' }}
+                value={searchData}
+                onChange={(e) => { searchDataHandler(e) }}
+              />
+              <IconButton type="button" sx={{ p: '10px' }} aria-label="search">
+                <SearchIcon onClick={search}/>
+              </IconButton>
+              
+            </Paper>
             </div>
             <Nav className="">
               <div className="d-flex basket-div">
