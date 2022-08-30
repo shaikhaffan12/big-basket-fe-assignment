@@ -109,7 +109,7 @@ export default function MediaCard() {
 
                                         <div className="card-button">
                                             <Button size="small" style={{ backgroundColor: "#f3cc76", color: '#000', height: "1.6rem" }}
-                                                onClick={() => { dispatch(setCount()) }}
+                                                onClick={() => {dispatch(setCount())}}
                                             >ADD</Button>
                                         </div>
                                     </div>
